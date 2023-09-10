@@ -1,0 +1,12 @@
+class Solution {
+    public int maxRepeating(String sequence, String word) {
+        StringBuilder ans = new StringBuilder(word);
+
+        int repeat = 0;
+        while(sequence.contains(ans)){
+            repeat++;
+            ans.append(word);
+        } 
+        return repeat;
+    }
+}
